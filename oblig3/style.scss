@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+html {
+    height: 100vw;
+}
+
+body {
+    margin: 0;
+    background-color: skyblue;
+    padding: 0;
+    height: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: all 0.5s linear;
+}
+.bendtext {
+    z-index: 100;
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    top: 2vw;
+    right: 2vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 5vw;
+}
+
+.invisible {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    justify-content: left;
+    height: 60vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.palm__section {
+    position: relative;
+    width: 100vw;
+    height: 120vw;
+    top: -25vw;
+    margin: 0 300px;
+    left: -5vw;
+}
+
+.palm-bubble {
+    position: fixed;
+    font-size: 1.3vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 6.5vw;
+    left: 6.7vw;
+    height: 9vw;
+    width: 37vw;
+    margin: 0;
+    text-align: center;
+    background: #fafafa;
+    opacity: 0;
+    border: 0.2vw solid #F2D5BB;
+    border-radius: 2vw;
+    padding: 1vw;
+    transition: all 0.5s linear 0.25s ;
+}
+
+.palm {
+    height: 100vw;
+    width: 80vw;
+}
+
+
+.static {
+    position: absolute;
+    transition: all 0.75s ease-in-out;
+}
+
+#background {
+    width: 100vw;
+    top: -30vw;
+}
+
+#road {
+    width: 100vw;
+    top: -5vw;
+}
+
+#clouds {
+    width: 100vw;
+    top: -92vw;
+}
+
+#bushes {
+    left: 0vw;
+    width: 100vw;
+
+}
+
+#radio {
+    width: 60vw;
+    top: -12vw;
+    left: -1vw;
+}
+
+#trash1 {
+    left: 15vw;
+    width: 33vw;
+    top: 100vw;
+}
+
+#trash2 {
+    left: 60vw;
+    width: 33vw;
+    top: 100vw;
+}
+
+#foreground {
+    width: 150vw;
+    top: -15vw;
+    left: -18vw;
+}
+
+#car {
+    width: 80vw; 
+    left: 15vw;
+    top: 5vw;
+}
+
+#snail {
+    top: 100vw;
+    left: 10vw;
+    width: 7.5vw;
+}
+
+#turtle {
+    top: 100%;
+    left: 56%;
+    width: 10%;
+}
+
+#logo {
+    top: 2vw;
+    right: 2vw;
+    width: 10vw;
+    border-radius: vw;
+    opacity: 0;
+}
+
