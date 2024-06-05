@@ -18,9 +18,12 @@ body {
   text-align: center;
   justify-content: center;
   top: 2vw;
-  right: 2vw;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  right: 7vw;
+  font-family: "chorine-large", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 5vw;
+  overflow: visible;
 }
 
 .invisible {
@@ -75,9 +78,9 @@ body {
 .talking-indicator {
   position: fixed;
   display: flex;
-  top: 15vw;
-  left: 25vw;
-  gap: 20px;
+  top: 6.5vw;
+  left: 48.7vw;
+  gap: 1vw;
 }
 
 .line {
