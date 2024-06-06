@@ -7,6 +7,17 @@ html {
   overflow: hidden;
 }
 
+.eyeleft {
+  position: absolute;
+  left: 45.3vw;
+  top: 38.2vw;
+  width: 1.3vw;
+  height: 2vw;
+  rotate: -10deg;
+  background-color: white;
+  border-radius: 50%;
+}
+
 .body {
   margin: 10px;
   padding: 0px;
