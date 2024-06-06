@@ -18,7 +18,7 @@ body {
   text-align: center;
   justify-content: center;
   top: 2vw;
-  right: 7vw;
+  left: 60vw;
   font-family: "chorine-large", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -84,9 +84,9 @@ body {
 }
 
 .line {
-  width: 5px;
-  height: 20px;
-  background-color: #000000;
+  width: 0.3vw;
+  height: 1.5vw;
+  background-color: #774a28;
   animation: pulse 1s infinite;
 }
 
