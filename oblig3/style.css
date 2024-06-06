@@ -12,6 +12,7 @@ body {
   transition: all 0.5s linear;
 }
 
+/* Styling for text that appears to bend */
 .bendtext {
   z-index: 100;
   position: fixed;
@@ -26,10 +27,12 @@ body {
   overflow: visible;
 }
 
+/* Class to hide elements */
 .invisible {
   display: none;
 }
 
+/* Container for slides, allows horizontal scrolling */
 .slides {
   display: flex;
   justify-content: left;
@@ -38,6 +41,7 @@ body {
   overflow-y: hidden;
 }
 
+/* Section for palm-themed content */
 .palm__section {
   position: relative;
   width: 100vw;
@@ -47,6 +51,7 @@ body {
   left: -5vw;
 }
 
+/* Styling for speech bubble in the palm section */
 .palm-bubble {
   position: fixed;
   font-size: 1.3vw;
@@ -65,16 +70,19 @@ body {
   transition: all 0.5s linear 0.25s;
 }
 
+/* Styling for palm image */
 .palm {
   height: 100vw;
   width: 80vw;
 }
 
+/* General class for static positioning with transition */
 .static {
   position: absolute;
   transition: all 0.75s ease-in-out;
 }
 
+/* Indicator for when something is talking */
 .talking-indicator {
   position: fixed;
   display: flex;
@@ -98,6 +106,7 @@ body {
   animation-delay: 0.4s;
 }
 
+/* Keyframes for pulsing animation */
 @keyframes pulse {
   0%, 100% {
     transform: scaleY(1);
@@ -106,72 +115,94 @@ body {
     transform: scaleY(1.5);
   }
 }
+/* Styling for background image */
 #background {
   width: 100vw;
   top: -30vw;
 }
 
+/* Styling for road image */
 #road {
   width: 100vw;
   top: -5vw;
 }
 
+/* Styling for clouds image */
 #clouds {
   width: 100vw;
   top: -92vw;
 }
 
+/* Styling for bushes image */
 #bushes {
+  z-index: 22;
   left: 0vw;
   width: 100vw;
 }
 
+/* Styling for radio image */
 #radio {
   width: 60vw;
   top: -12vw;
   left: -1vw;
 }
 
+/* Styling for first trash image */
 #trash1 {
   left: 15vw;
   width: 33vw;
   top: 100vw;
 }
 
+/* Styling for second trash image */
 #trash2 {
   left: 60vw;
   width: 33vw;
   top: 100vw;
 }
 
+/* Styling for foreground image */
 #foreground {
+  z-index: 21;
   width: 150vw;
   top: -15vw;
   left: -18vw;
 }
 
+/* Styling for car image */
 #car {
   width: 80vw;
   left: 15vw;
   top: 5vw;
 }
 
+/* Styling for snail image */
 #snail {
+  z-index: 40;
   top: 100vw;
   left: 10vw;
   width: 7.5vw;
 }
 
+/* Styling for turtle image */
 #turtle {
+  z-index: 41;
   top: 100%;
   left: 56%;
   width: 10%;
 }
 
+/* Styling for logo image */
 #logo {
   top: 2vw;
   right: 2vw;
   width: 10vw;
   border-radius: vw;
   opacity: 0;
+  transition: all 0.3s ease;
+}
+
+#logo:hover {
+  width: 12vw;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

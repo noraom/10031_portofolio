@@ -76,8 +76,8 @@ const observer = new IntersectionObserver((entries) => {
             }
 
             if (entry.target.classList.contains("animals")) {
-                document.querySelector("#snail").style.top = "60vw";
-                document.querySelector("#turtle").style.top = "84vw";
+                document.querySelector("#snail").style.top = "49vw";
+                document.querySelector("#turtle").style.top = "45vw";
             }
 
             else {
