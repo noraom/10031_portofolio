@@ -1,0 +1,464 @@
+// CSS RULES FOR THE POSTER 
+
+//Variables
+$font-family-1: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+$font-family-2:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+$color-blue: rgba(3, 3, 167, 0.822);
+$color-green: rgb(34, 136, 34);
+$color-blue-2: rgba(31, 96, 177, 0.822);
+$color-white: white;
+$color-black: black;
+
+html{
+    display: flex;
+    justify-content: center;
+}
+
+.body{
+    margin: 10px;
+    padding: 0px;
+    background-image: url(/idg1293-2024-oblig2-group-11-main/assets/img/background.svg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 600px;
+    max-width: fit-content;
+    height: 800px;
+    width: 900px;
+}
+
+.heading{
+    margin-left: 50px;
+
+    &__h1{
+        color: $color-blue;
+        font-weight: 700;
+        font-family: $font-family-1;
+        max-width: 150px;
+        &--green{
+                color: $color-green;
+        }
+    }
+
+    &__paragraph{
+        color: $color-black;
+        font-size: 0.9rem;
+        max-width: 220px;
+        font-family: $font-family-2;
+    }
+}
+
+.section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+
+    &__paragraph{
+        max-width: 150px;
+        color: $color-white;
+        font-size: 0.8rem;
+        margin-right: 40px;
+        margin-top: 40px;
+    } 
+
+    &__moonstars{
+        margin-top: -30px;
+    }
+
+    &__moon{
+        width: 90px; 
+        margin-right: -45px;
+        height: 100px;
+    }
+
+    &__star--big{
+        width: 30px;
+        margin-bottom: 85px;
+        margin-left: -10px;
+        opacity: 1; 
+        animation: flicker 3s infinite alternate;
+        overflow: visible;
+    }
+
+    &__star--small{
+        width: 20px;
+        margin-bottom: 60px; 
+        margin-left: -5px;
+        opacity: 1;
+        animation: flicker 1s infinite alternate;
+        overflow: visible;
+    }
+}
+
+.car{
+    margin: 30px;
+    margin-top: -0px;
+    padding-left: 40px;
+
+    &__paragraph{
+        padding: 0px;
+        font-size: 0.8rem;
+        transform: rotate(-10deg);
+
+        &--big{
+            font-size: 3rem;
+        }
+    }
+
+    &__svg{
+        width: 90px;
+        max-width: 100px;
+    }
+}
+
+
+.figures{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 20px 0px 30px;
+    z-index: -2;
+    margin: 10px 50px 10px 20px;
+    max-width: 400px;
+    animation: shakingAnimation 2s infinite alternate ease-in-out;
+
+    &__svg--small{
+        width: 15px;
+        z-index: -2;
+
+        &-1{
+            margin-bottom: -90px; 
+        }
+
+        &-2{
+            margin-bottom: -100px; 
+        }
+
+        &-3{
+            margin-left: -55px;
+            margin-bottom: -135px; 
+        }
+
+        &-4{
+            margin-bottom: -65px;
+            margin-left: -50px; 
+        }
+
+        &-5{
+            margin-right: -10px;
+            margin-bottom: -50px; 
+        }
+
+        &-6{
+            margin-bottom: -50px;
+            margin-right: -10px; 
+        }
+
+        &-7{
+            margin-bottom: -30px;
+            margin-right: -55px; 
+        }
+        &-8{
+            margin-right: -35px;
+            margin-bottom: -90px; 
+        }
+    }
+    
+    &__svg--medium{
+        width: 25px;
+        &-1{
+            margin-left: -40px;
+            margin-bottom: -20px;
+            z-index: -1; }
+
+        &-2{
+            margin-right: -70px;
+            margin-top: -30px;
+            z-index: -1; }
+    }
+
+    &__svg--big{
+        width: 45px;
+        margin-left: -10px;
+
+        z-index: -3;
+    }
+}
+
+
+
+
+.people{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+
+    &__svg{
+        
+        &-1{
+        padding: 10px;
+        width: 90px;
+        margin-bottom: -20px;
+        margin-right: 15px;}
+
+        &-2{
+        width: 70px;
+        margin-left: 10px;
+        margin-bottom: 25px;
+        }
+
+        &-3{
+            width: 90px;
+        }
+    }
+    
+}
+
+.earth{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 0px;
+
+    &__svg{
+        min-width: 450px;
+        max-width: 450px;
+        margin-top: -35px;
+        z-index: -4;
+       
+    }
+
+    &__paragraph{
+        margin-top: -390px;
+        display: flex;
+        font-size: 0.3rem;
+        font-weight: bold;
+        justify-content: center;
+        
+        &-1{
+            margin-left: 55px;
+            max-width: 20px;
+
+        }
+        &-2{
+            margin-left: 110px;
+            margin-top: -35px;
+            max-width: 30px;
+        }
+        &-h2{
+            min-width: 150px;
+            margin-top: 30px;
+            margin-left: -60px;
+            font-size: 0.9rem;
+
+        }
+        &-3{
+            margin-top: 70px; 
+            width: 20px;
+            font-size: 0.26rem;
+            margin-left: -125px;
+        }
+        &-4{
+            margin-left: 140px;
+            max-width: 30px;
+        }
+        &-5{
+            margin-top: 70px;
+            max-width: 35px;
+            margin-left: -30px;
+        }
+    }
+}
+
+
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $color-blue-2;
+    font-size: 0.30rem;
+    width: 100%;
+    color: $color-white;
+    padding: 5px 10px;
+    &__svg-1{
+        max-width: 100px;
+    }
+    &__svg-2{
+        max-width: 1px;
+        padding: 5px; 
+    }
+    a{
+        color: $color-white;
+    }
+    
+}
+
+.end{
+    width: 100%;
+    &__paragraph{
+        font-size: 0.3rem;
+        background-color: $color-white;
+        padding: 0px 60px;
+        margin: 0px;
+    }
+}
+
+
+
+// Media queries (making it responsive)
+$large: 600px; 
+
+// Specific rules for big screens
+@media  screen and (min-width: $large) {
+    .main__poster{
+        max-width: 900px;
+        margin: 20px 100px;
+    }
+    .section{
+        &__moonstars{
+            margin-top: -10px;
+            overflow: none;
+        }
+        &__moon{
+            width: 100px;
+        }
+    }
+    
+    .heading{
+        margin: 20px 0px 0px 80px;
+    }
+
+    .section__paragraph{
+        min-width: 270px;
+        margin-top: 20px;
+    }
+
+    .car{
+        &__paragraph{
+            padding: 0px 20px 5px 20px;
+        margin-top: 10px;
+        transform: rotate(-20deg);
+        }
+        &__svg{
+            width: 110px;
+        }
+    }
+    
+    
+    .figures{
+    max-width: 500px;
+    margin: 0px 50px;
+    margin-bottom: -20px;
+
+    &__svg-small{
+        width: 20px;
+        &-6, &-7, &-8{
+            margin-bottom: -60px;
+        }
+        &-7{
+            margin-bottom: -120px;
+        }
+    }
+    &__svg-medium{
+        width: 35px;
+    }
+    &__svg-big{
+        width: 60px;
+    }
+}
+
+.people{
+    padding: 30px;
+    &__svg-1, &__svg-2, &__svg-3{
+        min-width: 70px;
+        max-width: 100px;
+    }
+   
+    &__svg-1, &__svg-3{
+        margin-bottom: -25px;
+    }
+    
+}
+
+.earth{
+    &__svg{
+        min-width: 555px;
+    margin-top: -70px;
+    }
+    &__paragraph{
+        margin-top: -503px;
+    font-size: 0.5rem;
+    &-1{
+        max-width: 50px;
+        padding: 35px 5px 0px 15px;
+        margin-left: 30px;
+    }
+    &-2{
+        max-width: 65px;
+        padding-top: 8px;
+        padding-right: 2px;
+    }
+    &-h2{
+        padding-top: 30px;
+        font-size: 1.1rem;
+    }
+    &-3{
+        padding-top: 37px;
+        font-size: 0.4rem;
+        margin-left: -142px;
+        width: 26px;
+    }
+    &-4{
+        max-width: 45px;
+        padding-left: 0px;
+    }
+    &-5{
+        padding-top: 40px;
+        margin-left: -40px;
+    }
+    }
+}
+
+
+
+.end{
+    max-width: 600px;
+    font-size: 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    &__paragraph{
+        padding: 0px 20px;
+        font-size: 0.455rem
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+    font-size: 0.55rem;
+    padding: 0px;
+}
+
+}
+
+
+
+@keyframes flicker {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+@keyframes shakingAnimation {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-2deg); }
+    100% { transform: rotate(0deg); }
+  }
