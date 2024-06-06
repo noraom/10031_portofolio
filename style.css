@@ -68,14 +68,15 @@ footer {
   color: #59342C;
   text-align: center;
   padding: 10px 0;
-  position: fixed;
   width: 100%;
   bottom: 0;
+  position: fixed;
 }
 
 footer a {
   color: #59342C;
   text-decoration: none;
+  padding-left: 3vw;
 }
 
 footer a:hover {
